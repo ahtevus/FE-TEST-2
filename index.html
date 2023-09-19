@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" /> 
+    <meta  name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Test App</title>
+  
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="app-header align-center">Header (100px)</header>
+    <main>
+      <section class="img-banner">
+        <picture>
+          <source media="(min-width: 1024px)" srcset="assets/img/large.jpg" />
+          <source media="(min-width: 768px)" srcset="assets/img/medium.jpg" />
+          <source media="(min-width: 320px)" srcset="assets/img/small.jpg" />
+          <img
+            class="banner-image"
+            alt="Background image"
+            width="1024"
+            height="536" 
+            loading="eager"
+            src="assets/img/small.jpg"
+          />
+        </picture>
+
+        <div class="primary-content align-center">
+          <h1 class="app-title">Go Green :)</h1>
+          <button class="open-modal-button" onclick="openModal()">Click here</button>
+        </div>
+
+      </section>
+    </main>
+    <footer class="app-footer align-center"> Footer (100px) </footer>
+
+    <div id="appModal" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <span>Hello, World!</span>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
